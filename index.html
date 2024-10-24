@@ -1,0 +1,963 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digital Marketing</title>
+  <!-- icon  -->
+  <link rel="icon" href="./icon.png">
+  <!-- bootstrap cdn  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" href="./src/assets/css/bootstrap.min.css">
+  <!-- Fontshare clash display  -->
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600&f[]=manrope@700,400,600,500&display=swap" rel="stylesheet">
+  <!-- feather icon  -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- custom css  -->
+  <link rel="stylesheet" href="./src/assets/css/pages.css">
+  <link rel="stylesheet" href="./src/assets/css/animation.css">
+  <!-- carousel css-->
+  <link rel="stylesheet" href="./src/assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./src/assets/css/owl.theme.default.min.css">
+</head>
+
+<body>
+  <div id="home-nav" class="bg-black">
+    <div id="navbar" class="nav fade-in">
+      <div class="container">
+        <div class="row">
+          <div class="col-auto me-auto logo">
+            <a id="buttonClick" href="./index.html"><img src="./src/assets/image/DigiBoost.png" alt=""></a>
+          </div>
+          <div class="col-auto ms-auto d-flex">
+            <div class="work-together">
+              <button class="primary-button ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-send">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span id="dropId" class="primary">Let’s Work Together</span>
+              </button>
+            </div>
+            <div class="menu-button my-auto dropdown">
+              <button id="buttonClick2" onclick="toggleMenu()" class="dropbtn da-menu">
+                <svg width="54" height="52" viewBox="0 0 54 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M36 18H18" stroke="#2BFD86" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M36 26H24" stroke="#2BFD86" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M36 34H18" stroke="#2BFD86" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- hero section start  -->
+  <section class="hero bg-black py-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mx-auto">
+          <div class="big-hero-6">
+            <div class="slideInRightFadeIn">
+              <h1 class="font-max text-start text-md-center text-white">
+                <span><span class="position-relative ">Empowering <img class="img-left-top breathing delay-1s"
+                    src="./src/assets/image/bg/h-hero-left.svg" alt="">
+                </span> Your Business with </span> <br>
+                <span class="slideInLeftFadeIn">Digital Marketing Technique<span
+                  class="position-relative">s
+                  <img class="img-right-top breathing hide-md" src="./src/assets/image/bg/h-hero-right.svg" alt="">
+                </span> </span>
+              </h1>
+            </div>
+          </div>
+          <div class="position-relative hide-md">
+            <svg class="dot-dot-dot-line fade-in  onFocusAnimate " data-animationName="fade-in" width="935" height="716" viewBox="0 0 935 716" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M147.034 0.586959C128.928 0.586959 104.053 0.484467 87.9516 10.0261C74.2456 18.1482 55.2133 25.2424 44.4266 38.5184C33.8473 51.5391 11.7392 68.4074 11.7392 86.9378C11.7392 99.404 7.60952 114.917 2.9992 126.442C-2.10828 139.211 2.3 162.148 2.3 176.085C2.3 189.173 0.0749636 204.029 5.44639 216.114C10.8037 228.168 12.3389 246.194 22.9263 255.269C31.1887 262.351 38.3193 272.113 46.3494 280.615C63.5548 298.833 81.1851 319.44 96.6916 338.823C103.471 347.297 112.674 353.232 120.289 360.848C127.726 368.285 136.443 375.451 141.44 384.446C156.839 412.164 175.31 439.81 184.79 470.622C195.335 504.892 209.961 539.657 209.961 577.075C209.961 602.449 215.097 646.6 239.852 659.93C247.218 663.896 249.993 671.294 255.759 677.06C263.348 684.649 273.619 686.29 281.979 692.792C291.243 699.998 299.683 698.436 310.646 702.231C321.219 705.891 328.131 714.817 339.662 714.817C375.504 714.817 420.783 680.537 441.221 652.238C458.623 628.143 465.95 597.903 480.551 571.831C496.493 543.362 512.131 516.234 523.901 485.83C534.7 457.931 547.616 428.543 563.056 402.625C577.724 378.004 602.265 360.604 624.061 342.844C639.653 330.139 649.806 314.223 666.537 302.64C680.959 292.656 695.079 283.417 710.237 274.323C736.226 258.729 758.517 249.197 787.498 239.712C823.215 228.023 869.88 216.093 902.166 241.46C911.546 248.83 924.191 256.122 924.191 269.603C924.191 273.781 930.957 288.718 933.63 290.054" stroke="#2BFD86" stroke-linecap="round" stroke-dasharray="16 16"/>
+              </svg>
+              
+          </div>
+          <p class="text-lg text-center my-32 fade-in">Our digital marketing solutions can help you achieve your goals
+            and stay <br> ahead of the competition."</p>
+          <div class="text-center mt-64 mouse fade-in">
+            <button class="secondary-button click-btn fade-in">
+              <span class="text-black">View Our Project’s</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-arrow-up-right">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="delay-1s row hero-image-container">
+        <div class="col-4 image-container">
+          <div class="hero-image-1 slideInLeftFadeIn">
+            <img class="image mt-48" src="./src/assets/image/content-image/hero-image1.png" alt="">
+          </div>
+        </div>
+        <div class="col-4 image-container">
+          <div class="hero-image-2">
+            <img class="image mt-80 slideInTopFadeIn" src="./src/assets/image/content-image/hero-image2.png" alt="">
+          </div>
+        </div>
+        <div class="col-4 image-container">
+          <div class="hero-image-3">
+            <img class="image slideInRightFadeIn" src="./src/assets/image/content-image/hero-image3.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- slider section start  -->
+  <div class="works-slider slider-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col- 12 da-slider">
+          <div id="our-work-slider" class="da-slider-track">
+            <span class="da-slider-item">Branding</span>
+            <span class="da-slider-item">Strategy </span>
+            <span class="da-slider-item">SEO</span>
+            <span class="da-slider-item">Audiences</span>
+            <span class="da-slider-item">CRM</span>
+            <span class="da-slider-item">CRO</span>
+            <span class="da-slider-item">Branding</span>
+            <span class="da-slider-item">Strategy </span>
+            <span class="da-slider-item">SEO</span>
+            <span class="da-slider-item">Audiences</span>
+            <span class="da-slider-item">CRM</span>
+            <span class="da-slider-item">CRO</span>
+            <span class="da-slider-item">Branding</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- our story section start  -->
+  <section class="story py-100">
+    <div class="container ">
+      <div class="row">
+        <div class="col-12 col-lg-7 ">
+          <div class="from-hidden">
+            <h6 class="sub-heading onFocusAnimate " data-animationName="slidetobottom">
+              OUR STORY
+            </h6>
+          </div>
+          <h1 class="mb-32 animate-faster onFocusAnimate" data-animationName="slideInLeft">
+            Helping Businesses Thrive with Innovative Digital Marketing Solutions
+          </h1>
+          <p class="text-sm mb-48 onFocusAnimate animate-slow" data-animationName="fade-in">Our commitment to excellence
+            is reflected in the results we deliver for our clients.
+            From small businesses to large enterprises, we have a proven track record of helping organizations achieve
+            success online.</p>
+          <div class="counter d-flex text-center">
+            <div class="one animate-fast onFocusAnimate" data-animationName="slideInTop">
+              <h4 class="count">15</h4>
+              <span>Industry Experience</span>
+            </div>
+            <div class="one animate-normal onFocusAnimate" data-animationName="slideInTop">
+              <h4 class="count">12</h4>
+              <span>Awards Winning</span>
+            </div>
+            <div class="one animate-slow onFocusAnimate" data-animationName="slideInTop">
+              <h4 class="count">4587</h4>
+              <span>Global Client’s</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-5">
+          <div class="image-container position-relative mx-auto img-max-width onFocusAnimate"
+            data-animationName="fade-in">
+            <div class="bottom-image top-left">
+              <img class="image" src="./src/assets/image/content-image/story-1.png" alt="">
+            </div>
+            <svg class="star hide-md rotate fast" width="160" height="160" viewBox="0 0 160 160" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M80 3.91611C82.8475 9.40561 90.9795 10.2065 94.8432 5.37805C96.5651 11.3176 104.385 13.6896 109.116 9.70766C109.646 15.869 116.853 19.7209 122.27 16.7386C121.588 22.8849 127.904 28.0687 133.799 26.2006C131.931 32.0957 137.115 38.4123 143.261 37.7301C140.279 43.1475 144.131 50.3539 150.292 50.884C146.31 55.6154 148.682 63.4349 154.622 65.1568C149.793 69.0205 150.594 77.1525 156.084 80C150.594 82.8475 149.793 90.9795 154.622 94.8432C148.682 96.5651 146.31 104.385 150.292 109.116C144.131 109.646 140.279 116.853 143.261 122.27C137.115 121.588 131.931 127.904 133.799 133.799C127.904 131.931 121.588 137.115 122.27 143.261C116.853 140.279 109.646 144.131 109.116 150.292C104.385 146.31 96.5651 148.682 94.8432 154.622C90.9795 149.793 82.8475 150.594 80 156.084C77.1525 150.594 69.0205 149.793 65.1568 154.622C63.4349 148.682 55.6154 146.31 50.884 150.292C50.3539 144.131 43.1475 140.279 37.7301 143.261C38.4123 137.115 32.0957 131.931 26.2006 133.799C28.0687 127.904 22.8849 121.588 16.7386 122.27C19.7209 116.853 15.869 109.646 9.70766 109.116C13.6896 104.385 11.3176 96.5651 5.37805 94.8432C10.2065 90.9795 9.40561 82.8475 3.91611 80C9.40561 77.1525 10.2065 69.0205 5.37805 65.1568C11.3176 63.4349 13.6896 55.6154 9.70766 50.884C15.869 50.3539 19.7209 43.1475 16.7386 37.7301C22.8849 38.4123 28.0687 32.0957 26.2006 26.2006C32.0957 28.0687 38.4123 22.8849 37.7301 16.7386C43.1475 19.7209 50.3539 15.869 50.884 9.70766C55.6154 13.6896 63.4349 11.3176 65.1568 5.37805C69.0205 10.2065 77.1525 9.40561 80 3.91611Z"
+                stroke="#2BFD86" stroke-width="2" />
+            </svg>
+            <div class="top-image bottom-right ">
+              <img class="image" src="./src/assets/image/content-image/story-2.png" alt="">
+            </div>
+          </div>
+          <!-- <div class="image-container position-relative">
+              <div class="image-1">
+                <img src="./src/assets/image/content-image/story-1.png" alt="">
+              </div>
+              <div class="image-2 position-absolute">
+                <img src="./src/assets/image/content-image/story-2.png" alt="">
+              </div>
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- why us section start  -->
+  <section class="why-us py-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-5">
+          <div class="image-container">
+            <div class="image-1 position-relative img-max-width">
+              <svg class="star-top windmill" width="110" height="110" viewBox="0 0 110 110" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M55.9973 2.32543L57.3843 21.2746C57.6158 24.4373 61.9567 25.1248 63.1541 22.1885L70.3288 4.59531C70.7968 3.44783 72.5218 4.00817 72.2259 5.21171L67.6893 23.662C66.9321 26.7415 70.8481 28.7368 72.8944 26.3142L85.1545 11.7991C85.9542 10.8524 87.4215 11.9184 86.7682 12.9716L76.7522 29.117C75.0805 31.8118 78.1882 34.9195 80.883 33.2478L97.0284 23.2318C98.0815 22.5785 99.1477 24.0458 98.2009 24.8455L83.6858 37.1056C81.2632 39.1519 83.2585 43.0679 86.338 42.3107L104.788 37.7741C105.992 37.4783 106.552 39.2032 105.405 39.6712L87.8115 46.8459C84.8752 48.0433 85.5627 52.3843 88.7254 52.6157L107.675 54.0027C108.911 54.0931 108.911 55.9069 107.675 55.9973L88.7254 57.3843C85.5627 57.6158 84.8752 61.9567 87.8115 63.1541L105.405 70.3288C106.552 70.7968 105.992 72.5218 104.788 72.2259L86.338 67.6893C83.2585 66.9321 81.2632 70.8481 83.6858 72.8944L98.2009 85.1545C99.1476 85.9542 98.0816 87.4215 97.0284 86.7682L80.883 76.7522C78.1882 75.0805 75.0805 78.1882 76.7522 80.883L86.7682 97.0284C87.4215 98.0815 85.9542 99.1477 85.1545 98.2008L72.8944 83.6858C70.8481 81.2632 66.9321 83.2585 67.6893 86.338L72.2259 104.788C72.5217 105.992 70.7968 106.552 70.3288 105.405L63.1541 87.8115C61.9567 84.8752 57.6157 85.5627 57.3843 88.7254L55.9973 107.675C55.9069 108.911 54.0931 108.911 54.0027 107.675L52.6157 88.7254C52.3842 85.5627 48.0433 84.8752 46.8459 87.8115L39.6712 105.405C39.2032 106.552 37.4782 105.992 37.7741 104.788L42.3107 86.338C43.0679 83.2585 39.1519 81.2632 37.1056 83.6858L24.8455 98.2009C24.0458 99.1476 22.5785 98.0816 23.2318 97.0284L33.2478 80.883C34.9195 78.1882 31.8117 75.0805 29.117 76.7522L12.9716 86.7682C11.9185 87.4215 10.8523 85.9542 11.7992 85.1545L26.3142 72.8944C28.7368 70.8481 26.7415 66.9321 23.662 67.6893L5.2117 72.2259C4.00832 72.5217 3.44769 70.7968 4.59533 70.3288L22.1885 63.1541C25.1249 61.9567 24.4373 57.6157 21.2746 57.3843L2.32542 55.9973C1.08948 55.9069 1.08936 54.0931 2.32543 54.0027L21.2746 52.6157C24.4373 52.3842 25.1248 48.0433 22.1885 46.8459L4.59531 39.6712C3.44783 39.2032 4.00817 37.4782 5.21171 37.7741L23.662 42.3107C26.7415 43.0679 28.7368 39.1519 26.3142 37.1056L11.7991 24.8455C10.8524 24.0459 11.9184 22.5784 12.9716 23.2318L29.117 33.2478C31.8118 34.9195 34.9195 31.8118 33.2478 29.117L23.2318 12.9716C22.5785 11.9185 24.0458 10.8523 24.8455 11.7992L37.1056 26.3142C39.1519 28.7368 43.0679 26.7415 42.3107 23.662L37.7741 5.2117C37.4783 4.00832 39.2032 3.44769 39.6712 4.59533L46.8459 22.1885C48.0433 25.1249 52.3843 24.4373 52.6157 21.2746L54.0027 2.32542C54.0931 1.08948 55.9069 1.08936 55.9973 2.32543Z"
+                  stroke="#FEED11" stroke-width="2" />
+              </svg>
+              <img class="image onFocusAnimate" data-animationName="fade-in"
+                src="./src/assets/image/content-image/why-us.png" alt="">
+              <svg class="star-bottom lb-rt-move hide-md" width="66" height="66" viewBox="0 0 66 66" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M58.9729 0.629238L57.1036 30.2389L65.6633 58.6461L36.0535 56.7766L7.64637 65.3361L9.51563 35.7264L0.956004 7.31925L30.5658 9.18869L58.9729 0.629238Z"
+                  fill="#FF8E8E" />
+              </svg>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 ms-auto my-64">
+          <div class="from-hidden">
+            <h6 class="sub-heading onFocusAnimate" data-animationName="slidetobottom">
+              WHY CHOOSE US
+            </h6>
+          </div>
+          <h1 class="mb-64 onFocusAnimate" data-animationName="fade-in">
+            Results-Driven Digital Marketing Solutions for Your Business Goals
+          </h1>
+          <div class="counter">
+            <div class="one onFocusAnimate animate-fast" data-animationName="slideInRight">
+              <div class="d-flex">
+                <div class="why-num">
+                  <span class="h5">1</span>
+                </div>
+                <h5>Proven Track Record</h5>
+              </div>
+              <p>We have a history of success and client satisfaction, with a portfolio of happy clients</p>
+            </div>
+            <div class="one animate-normal onFocusAnimate" data-animationName="slideInRight">
+              <div class="d-flex">
+                <div class="why-num">
+                  <span class="h5">2</span>
+                </div>
+                <h5>Customized Strategies</h5>
+              </div>
+              <p>Our digital marketing solutions are tailored to your business goals, budget, and target audience,
+                ensuring that we deliver the results you need.</p>
+            </div>
+            <div class="one onFocusAnimate animate-slow" data-animationName="slideInRight">
+              <div class="d-flex">
+                <div class="why-num text-center">
+                  <span class="h5 m-auto">3</span>
+                </div>
+                <h5>Experienced Experts</h5>
+              </div>
+              <p>Our team of experienced digital marketers has the knowledge and expertise to help you achieve your
+                goals and grow your business online.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- our expertise section start  -->
+  <section class="expertise py-100 primary-bg">
+    <div class="container">
+      <div class="row m-0">
+        <div class="col-12">
+          <div class="from-hidden">
+            <h6 class="sub-heading onFocusAnimate" data-animationName="slidetobottom">
+              OUR EXPERTISE
+            </h6>
+          </div>
+          <div class="position-relative">
+            <h1 class=" onFocusAnimate" data-animationName="slideInLeft">
+              Tailored Digital Marketing <br> Solutions to Meet Your Business <br> Needs
+            </h1>
+            <svg class="expertise-shape hide-md breathing" width="190" height="152" viewBox="0 0 190 152" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M184.833 1C187.991 11.1075 191.114 29.2929 185.01 38.839C180.641 45.6739 172.175 52.4011 163.725 55.3535M163.725 55.3535C161.68 56.0677 159.637 56.561 157.653 56.7814C154.945 57.0822 147.26 58.5454 147.26 54.2055C147.26 51.6373 153.233 52.1234 155.077 52.1626C158.81 52.242 161.596 53.4148 163.725 55.3535ZM163.725 55.3535C166.432 57.8199 168.075 61.5259 169.244 65.7971C173.073 79.7808 171.696 92.3563 163.337 104.658C150.547 123.481 128.796 140.898 104.891 140.898M100 140.595C100.199 138.604 101.958 135.836 102.995 134.147C103.668 133.05 104.339 131.812 105.159 130.822C105.58 130.313 106.027 130.155 106.19 129.504M100 142.143C101.676 143.818 103.644 145.08 105.302 146.785C106.745 148.27 108.452 149.369 110.059 150.654"
+                stroke="#FE5F5F" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4" />
+              <path d="M50 29L70.5061 58.4939L100 79L70.5061 99.5061L50 129L29.4939 99.5061L0 79L29.4939 58.4939L50 29Z"
+                fill="#00A146" />
+            </svg>
+          </div>
+        </div>
+        <div class="col-12 xp">
+          <div class="row">
+            <div class="col-12 col-lg-6 xp-details animate-fast onFocusAnimate" data-animationName="slideInBottom">
+              <a class="h3" href="#">
+                <span onmouseover="chngImgById('./src/assets/image/content-image/team-1.png', 'changedImage1')"
+                  onmouseout="imageReset('changedImage1')">Search Engine Optimization (SEO)</span>
+              </a>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="animate-fast onFocusAnimate" data-animationName="slideInBottom">
+                <p class="text-sm changed-image">The process of optimizing your <span><img id="changedImage1" src=""
+                      class="mx-auto changedImage101"></span> website to rank higher in search engine results pages
+                  (SERPs) and drive organic traffic to your website.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 xp">
+          <div class="row">
+            <div class="col-12 col-lg-6 xp-details animate-fast onFocusAnimate" data-animationName="slideInBottom">
+              <a class="h3" href="#">
+                <span onmouseover="chngImgById('./src/assets/image/content-image/team-2.png', 'changedImage2')"
+                  onmouseout="imageReset('changedImage2')">Social Media Marketing</span>
+              </a>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="animate-fast onFocusAnimate" data-animationName="slideInBottom">
+                <p class="text-sm  changed-image">Utilizing social media <span><img id="changedImage2" src=""
+                      class="mx-auto changedImage101"></span> platforms to build brand awareness, engage with customers,
+                  and
+                  drive website traffic and sales.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 xp">
+          <div class="row">
+            <div class="col-12 col-lg-6 xp-details animate-fast onFocusAnimate" data-animationName="slideInBottom">
+              <a class="h3" href="#">
+                <span onmouseover="chngImgById('./src/assets/image/content-image/team-3.png', 'changedImage3')"
+                  onmouseout="imageReset('changedImage3')">Content Marketing</span>
+              </a>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="animate-fast onFocusAnimate" data-animationName="slideInBottom">
+                <p class="text-sm changed-image">Creating valuable and <span><img id="changedImage3" src=""
+                      class="mx-auto changedImage101"></span> informative content, such as blog posts, videos, and
+                  infographics, to attract and engage with customers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 xp">
+          <div class="row">
+            <div class="col-12 col-lg-6 xp-details animate-fast onFocusAnimate" data-animationName="slideInBottom">
+              <a class="h3" href="#">
+                <span onmouseover="chngImgById('./src/assets/image/content-image/team-4.png', 'changedImage4')"
+                  onmouseout="imageReset('changedImage4')">Email Marketing</span>
+              </a>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="animate-fast onFocusAnimate" data-animationName="slideInBottom">
+                <p class="text-sm changed-image">Sending targeted and <span><img id="changedImage4" src=""
+                      class="mx-auto changedImage101"></span> personalized emails to subscribers with the goal of
+                  building
+                  relationships, promoting products, and driving conversions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- sucess stories start here   -->
+  <section class="success pt-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-9 position-relative">
+          <div>
+            <div class="from-hidden">
+              <h6 class="sub-heading onFocusAnimate" data-animationName="slidetobottom">
+                SUCCESS STORIES
+              </h6>
+            </div>
+            <h1 class="mb-80 onFocusAnimate" data-animationName="slideInLeft">Our Digital Marketing Case Studies That
+              Speak for Themselves</h1>
+          </div>
+          <svg class="sucess-bg-1 hide-md breathing" width="120" height="175" viewBox="0 0 120 175" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1.07641 43.5209C4.92006 41.367 9.85161 41.1649 14.0645 40.1756C25.2073 37.5589 36.0543 33.8278 47.0699 30.7458C54.4372 28.6845 62.5202 27.4276 69.8254 24.6905M69.8254 24.6905C74.9074 22.7864 79.6131 20.166 83.4396 16.0601C87.8645 11.3119 97.274 1.05634 86.3511 1.04994C73.8096 1.04259 69.9736 14.2567 69.8254 24.6905ZM69.8254 24.6905C69.8167 25.3016 69.8206 25.9031 69.8363 26.4918C70.2111 40.6329 84.5636 55.1794 92.5007 65.7493C100.495 76.3954 110.528 90.5712 114.402 103.482C119.599 120.798 125.408 152.075 101.385 156.054M88.1524 170.008C89.4761 166.088 91.0545 160.602 91.4526 159.706C92.9038 156.441 97.2507 145.538 101.392 145.081C101.389 149.73 103.167 151.504 104.059 155.522C104.889 159.258 103.815 159.342 107.188 161.544C109.605 163.123 115.397 164.547 116.504 167.036C111.782 167.033 94.0348 166.9 88.1524 170.008ZM88.1524 170.008C86.9494 173.571 85.9567 175.842 86.2509 172.2C86.321 171.332 87.0148 170.61 88.1524 170.008Z"
+              stroke="#00A146" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 4" />
+          </svg>
+          <svg class="sucess-bg-2 hide-md windmill" width="100" height="100" viewBox="0 0 100 100" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 0L70.5061 29.4939L100 50L70.5061 70.5061L50 100L29.4939 70.5061L0 50L29.4939 29.4939L50 0Z"
+              fill="#FF8E8E" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="d-block d-md-none block-list__item">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 my-auto">
+            <div class="rt-g">
+              <h5>Dog Care</h5>
+            </div>
+            <h2>PawCare</h2>
+            <ul>
+              <li>Search Engine Optimization</li>
+              <li>Social Media Marketing</li>
+              <li>Content Marketing</li>
+            </ul>
+
+            <button class="secondary-button my-48">
+              <span class="text-black">View Case Study</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-arrow-up-right">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </button>
+          </div>
+          <div class="col-12 col-md-8 my-24">
+            <div class="bg-dark h-100 w-100">
+              <div class="image-container">
+                <img class="image" src="./src/assets/image/content-image/success-story.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="d-none d-md-block success py-100 section--vertical" id="second">
+    <div class="block-list my-auto">
+      <div class=" block-list__item">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 my-auto">
+              <div class="rt-g">
+                <h5>Dog Care</h5>
+              </div>
+              <h2>PawCare</h2>
+              <ul>
+                <li>Search Engine Optimization</li>
+                <li>Social Media Marketing</li>
+                <li>Content Marketing</li>
+              </ul>
+
+              <button class="secondary-button my-48">
+                <span class="text-black">View Case Study</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-arrow-up-right">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </button>
+            </div>
+            <div class="col-12 col-md-8 my-24">
+              <div class="bg-dark h-100 w-100">
+                <div class="image-container">
+                  <img class="image" src="./src/assets/image/content-image/success-story.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" block-list__item bg-secondary">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-4 my-auto">
+              <div class="rt-g">
+                <h5>Dog Care</h5>
+              </div>
+              <h2>PawCare</h2>
+              <ul>
+                <li>Search Engine Optimization</li>
+                <li>Social Media Marketing</li>
+                <li>Content Marketing</li>
+              </ul>
+
+              <button class="secondary-button my-48">
+                <span class="text-black">View Case Study</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-arrow-up-right">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </button>
+            </div>
+            <div class="col-12 col-lg-8 my-24">
+              <div class="bg-dark h-100 w-100">
+                <div class="image-container">
+                  <img class="image" src="./src/assets/image/content-image/success-story.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" block-list__item">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-4 my-auto">
+              <div class="rt-g">
+                <h5>Dog Care</h5>
+              </div>
+              <h2>PawCare</h2>
+              <ul>
+                <li>Search Engine Optimization</li>
+                <li>Social Media Marketing</li>
+                <li>Content Marketing</li>
+              </ul>
+
+              <button class="secondary-button my-48">
+                <span class="text-black">View Case Study</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-arrow-up-right">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </button>
+            </div>
+            <div class="col-12 col-lg-8 my-24">
+              <div class="bg-dark h-100 w-100">
+                <div class="image-container">
+                  <img class="image" src="./src/assets/image/content-image/success-story.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- our team section start  -->
+  <section class="our-team py-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-9 mb-80 position-relative">
+          <div>
+            <div class="from-hidden">
+              <h6 class="sub-heading onFocusAnimate" data-animationName="slidetobottom">
+                OUR TEAM
+              </h6>
+            </div>
+            <h1 class=" onFocusAnimate" data-animationName="slideInLeft">Meet the Minds Driving Our <br> Digital
+              Marketing Strategies</h1>
+          </div>
+          <div class="team-bg hide-md">
+            <svg class="breathing" width="216" height="248" viewBox="0 0 216 248" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1 80.0399C11.9475 78.0495 20.8223 67.3507 31.9578 64.1692C49.6499 59.1143 66.1045 60.0142 84.0767 58.683C92.3942 58.0668 102.964 55.5848 112.625 51.4048M112.625 51.4048C122.768 47.0163 131.909 40.7564 136.392 32.8195C140.781 25.0465 148.241 7.35008 136.392 2.2535C122.658 -3.65332 102.668 12.4669 102.495 26.5495C102.395 34.6417 107.234 43.6291 112.625 51.4048ZM112.625 51.4048C116.583 57.113 120.838 62.1681 123.656 65.7366C149.206 98.0974 178.793 127.115 204.087 159.688C211.081 168.694 215.527 178.198 214.178 189.666C213.024 199.47 210.978 209.357 202.912 214.942C190.791 223.333 178.015 237.555 163.235 240.511M160.51 239.093C162.464 236.922 163.15 233.725 164.795 231.297C165.622 230.076 166.374 229.088 166.832 227.714M161.142 240.99C162.66 242.339 163.258 243.437 165.708 243.518C169.357 243.64 171.442 245.191 174.418 246.679"
+                stroke="#00A146" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 4" />
+            </svg>
+          </div>
+        </div>
+        <div class="col-12 slider owl-carousel owl-theme">
+          <div class="item ">
+            <div class="image">
+              <img class="rounded-circle" src="./src/assets/image/content-image/team-2.png" alt="">
+            </div>
+            <div class="text-center">
+              <h5>Sophia Lee</h5>
+              <span class="sm">
+                Senior SEO engineer
+              </span>
+            </div>
+          </div>
+          <div class="item ">
+            <div class="image">
+              <img class="rounded-circle" src="./src/assets/image/content-image/team-1.png" alt="">
+            </div>
+            <div class="text-center">
+              <h5>Sophia aLee</h5>
+              <span class="sm">
+                Senior SEO engineer
+              </span>
+            </div>
+          </div>
+          <div class="item ">
+            <div class="image">
+              <img class="rounded-circle" src="./src/assets/image/content-image/team-3.png" alt="">
+            </div>
+            <div class="text-center">
+              <h5>Sophia Lee</h5>
+              <span class="sm">
+                Senior SEO engineer
+              </span>
+            </div>
+          </div>
+          <div class="item ">
+            <div class="image">
+              <img class="rounded-circle" src="./src/assets/image/content-image/team-4.png" alt="">
+            </div>
+            <div class="text-center">
+              <h5>Sophia Lee</h5>
+              <span class="sm">
+                Senior SEO engineer
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- brands section start here  -->
+  <section class="brands py-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-9 position-relative">
+          <div class="from-hidden">
+            <h6 class="sub-heading onFocusAnimate" data-animationName="slidetobottom">
+              BRANDS
+            </h6>
+          </div>
+          <h1 class="onFocusAnimate" data-animationName="slideInLeftFadeIn">Trusted digital marketing partner for over
+            70+ brands</h1>
+          <span class="brand-bg hide-md ">
+            <svg class="breathing" width="173" height="190" viewBox="0 0 173 190" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1 45.9085L1.12173 45.7151C8.84012 33.4562 15.7605 22.4648 28.3936 13.8241C39.8182 6.01015 56.0898 1.19448 69.6941 1.01063C83.2984 0.826848 96.2641 2.96527 105.696 12.1355C116.655 20.1175 128.524 39.569 129.613 54.7959M129.613 54.7959C129.667 55.545 129.694 56.2839 129.694 57.0107C130.09 63.3389 128.039 79.2253 123.194 84.5107C119.676 88.3483 112.131 95.9906 104.194 93.0107C99.1497 93.9279 97.253 85.5498 97.253 81.3701C97.253 72.88 99.5425 68.5934 106.634 63.1702C114.468 57.1796 122.272 54.6808 129.613 54.7959ZM129.613 54.7959C151.248 55.1351 168.874 78.175 171.46 101.446C172.266 108.698 170.557 120.665 166.694 127.011C161.373 135.752 158.226 142.85 151.102 149.854C136.194 164.511 123.293 171.455 107.385 181M100.062 183.203C100.062 177.467 100.834 171.793 101.752 166.136C102.294 162.802 102.098 158.355 104.625 155.828M100.823 184.724C107.187 184.724 113.728 186.999 119.834 188.526"
+                stroke="#2BFD86" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 4" />
+            </svg>
+          </span>
+        </div>
+        <div class="brand-item">
+          <div id="brand-slider-track" class="slider-track">
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/paperfly-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/guidence-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/dhakacast-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/raj-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/augmedix-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/humanity-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/paperfly-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/guidence-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/dhakacast-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/raj-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/augmedix-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/humanity-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/dhakacast-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/raj-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/augmedix-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/humanity-logo.png" alt="">
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- testimonial section start here  -->
+  <section class="testimonial py-100 bg-black">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-80 position-relative">
+          <div class="from-hidden">
+            <h6 class="sub-heading onFocusAnimate" data-animationName="slidetobottom">
+              testimonial
+            </h6>
+          </div>
+          <h1 class="text-white onFocusAnimate" data-animationName="slideInRightFadeIn">Our awesome customers <br> Love
+            Working with Us </h1>
+          <svg class="testimonial-bg hide-md breathing" width="190" height="152" viewBox="0 0 190 152" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M184.833 1C187.991 11.1075 191.114 29.2929 185.01 38.839C180.641 45.6739 172.175 52.4011 163.725 55.3535M163.725 55.3535C161.68 56.0677 159.637 56.561 157.653 56.7814C154.945 57.0822 147.26 58.5454 147.26 54.2055C147.26 51.6373 153.233 52.1234 155.077 52.1626C158.81 52.242 161.596 53.4148 163.725 55.3535ZM163.725 55.3535C166.432 57.8199 168.075 61.5259 169.244 65.7971C173.073 79.7808 171.696 92.3563 163.337 104.658C150.547 123.481 128.796 140.898 104.891 140.898M100 140.595C100.199 138.604 101.958 135.836 102.995 134.147C103.668 133.05 104.339 131.812 105.159 130.822C105.58 130.313 106.027 130.155 106.19 129.504M100 142.143C101.676 143.818 103.644 145.08 105.302 146.785C106.745 148.27 108.452 149.369 110.059 150.654"
+              stroke="#FE5F5F" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 4" />
+            <path d="M50 29L70.5061 58.4939L100 79L70.5061 99.5061L50 129L29.4939 99.5061L0 79L29.4939 58.4939L50 29Z"
+              fill="#89FFBC" />
+          </svg>
+
+        </div>
+        <div id="carouselIndicators" class="col-12 owl-carousel test owl-theme">
+          <div class="card text-center">
+            <img class="mx-auto mb-32" src="./src/assets/image/content-image/testimonial-1.png" alt="">
+            <h5 class="secondary mb-3">Sophia Lee</h5>
+            <span class="text-sm mb-3">Founder and CEO of Eduraka</span>
+            <svg width="43" height="35" viewBox="0 0 83 75" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="83" height="75" fill="url(#pattern0)" />
+              <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_108_0" transform="scale(0.0120482 0.0133333)" />
+                </pattern>
+                <image id="image0_108_0" width="83" height="75"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAABLCAYAAAAMN7v2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKzSURBVHhe7dtPTxNBHMbxnxWxrMiWEmkISjnpSbjhhXqDg5GjJ+WmifHPzRMvQO0r8AUY4t2D3EG9i+FuiYkhHigJiasiOr91Liq1nZ1nZxt9Pglpp5eh3852d5r2WBRF34UgSvaWABgTiDGBGBOIMYEYE4gxgRgTiDGBGBOIMYEYE4gxgYJ/ajQwVZHBi+NSistSqpg/c3uU5GVLko2WHfnTeQamYjN37ef4L3Pvr76Rg+09O+pd7jH1H47vzEm5UZfBmVrHJ/C73Yfr0n60bkfZlOfrEi2dl6H56XTuXn248jTTC5nbYa6rYOLFstTfP5DKyuU0Zq8hfWlEnXtibdm8kJecQvrIJaauxHNb99OAIemLVXt2LY0Yem4Fj3nmyZJUm4t2FI4eCZOvb0p09YJ9JDxozLHHizJ8Y9aOwtEVqatRT25FgsUcvj4rI3fn7CisanOh8JAKElMPsdGVhh2FpSeb0+aF7AeQmOXGdGErY9RcKfQLSMyiVqUeEUWctTvxjqk7iqJWpR4R/cR7BzRirinHMlwKfTI7jC9vd+SwndhHftXLdnLcXFOeynAp1G3uwraTVXM5FDuexXfNNrFttou+Jl/dct7doOY+ivdhftLxyRzuJbAn4xryYLudW0gFOQG5+Ly5Y++F97Xlfui68I55vB7be2HpmdzVtwzvgy6Cr8x/GWMCMSaQ96XR2a17ciKHi/b91U35ePu5Hf1J3zP1M9M8dJu7E65MIMYEYkwgxgRiTCDGBGJMIMYEYkwgxgRiTCDGBGJMIMYEYkwgxgRiTCDGBGJMIMYEYkwgxgRiTCDGBPL/fmZzQUrxkB3hJBvv0i8DdKI/V8nr90bd5u4k999O/k94mAMxJhBjAjEmEGMCMSYQYwIxJhBjAjEmEGMCMSYQYwIxJhBjwoj8AI0skoof3g/HAAAAAElFTkSuQmCC" />
+              </defs>
+            </svg>
+            <p class="xsm">“Working with this digital marketing team has been a game-changer for our business. Their
+              personalized attention and custom strategies have helped us reach new levels of success online.</p>
+          </div>
+          <div class="card text-center">
+            <img class="mx-auto mb-32" src="./src/assets/image/content-image/testimonial-2" alt="">
+            <h5 class="secondary mb-3">Sophia Lee</h5>
+            <span class="text-sm mb-3">Founder and CEO of Eduraka</span>
+            <svg width="43" height="35" viewBox="0 0 83 75" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="83" height="75" fill="url(#pattern1)" />
+              <defs>
+                <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_108_8" transform="scale(0.0120482 0.0133333)" />
+                </pattern>
+                <image id="image0_108_8" width="83" height="75"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAABLCAYAAAAMN7v2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKzSURBVHhe7dtPTxNBHMbxnxWxrMiWEmkISjnpSbjhhXqDg5GjJ+WmifHPzRMvQO0r8AUY4t2D3EG9i+FuiYkhHigJiasiOr91Liq1nZ1nZxt9Pglpp5eh3852d5r2WBRF34UgSvaWABgTiDGBGBOIMYEYE4gxgRgTiDGBGBOIMYEYE4gxgYJ/ajQwVZHBi+NSistSqpg/c3uU5GVLko2WHfnTeQamYjN37ef4L3Pvr76Rg+09O+pd7jH1H47vzEm5UZfBmVrHJ/C73Yfr0n60bkfZlOfrEi2dl6H56XTuXn248jTTC5nbYa6rYOLFstTfP5DKyuU0Zq8hfWlEnXtibdm8kJecQvrIJaauxHNb99OAIemLVXt2LY0Yem4Fj3nmyZJUm4t2FI4eCZOvb0p09YJ9JDxozLHHizJ8Y9aOwtEVqatRT25FgsUcvj4rI3fn7CisanOh8JAKElMPsdGVhh2FpSeb0+aF7AeQmOXGdGErY9RcKfQLSMyiVqUeEUWctTvxjqk7iqJWpR4R/cR7BzRirinHMlwKfTI7jC9vd+SwndhHftXLdnLcXFOeynAp1G3uwraTVXM5FDuexXfNNrFttou+Jl/dct7doOY+ivdhftLxyRzuJbAn4xryYLudW0gFOQG5+Ly5Y++F97Xlfui68I55vB7be2HpmdzVtwzvgy6Cr8x/GWMCMSaQ96XR2a17ciKHi/b91U35ePu5Hf1J3zP1M9M8dJu7E65MIMYEYkwgxgRiTCDGBGJMIMYEYkwgxgRiTCDGBGJMIMYEYkwgxgRiTCDGBGJMIMYEYkwgxgRiTCDGBPL/fmZzQUrxkB3hJBvv0i8DdKI/V8nr90bd5u4k999O/k94mAMxJhBjAjEmEGMCMSYQYwIxJhBjAjEmEGMCMSYQYwIxJhBjwoj8AI0skoof3g/HAAAAAElFTkSuQmCC" />
+              </defs>
+            </svg>
+            <p class="xsm">
+              Working with this digital marketing team has been a game-changer for our business. Their personalized
+              attention and custom strategies have helped us reach new levels of success online.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- start a project section start  -->
+  <section class="start-project secondary-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 col-md-8 col-lg-7 mx-auto text-center">
+          <div class="ready-left-right position-relative">
+            <div class="star-1 lt-rb-move">
+              <svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M30.5 0L43.0087 17.9913L61 30.5L43.0087 43.0087L30.5 61L17.9913 43.0087L0 30.5L17.9913 17.9913L30.5 0Z"
+                  fill="#FE5F5F" />
+              </svg>
+            </div>
+            <div class="position-relative">
+              <img class="img-left-top rotate" src="./src/assets/image/bg/yellow-star.svg" alt="">
+              <h1 class="font-max mb-64 onFocusAnimate" data-animationName="fade-in">
+                Ready for your digital success?
+              </h1>
+              <img class="img-right-bottom breathing" src="./src/assets/image/bg/dot-shape.svg" alt="">
+            </div>
+            <div class="pos  onFocusAnimate" data-animationName="fade-in">
+              <button class="tertiary-button position-relative">
+                <span class="sp-bg breathing position-absolute">
+                  <svg width="52" height="76" viewBox="0 0 52 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M45.6983 49.4009C35.654 45.6864 25.7953 41.2566 15.7074 37.5259M50 40.018C48.2779 27.3545 46.3425 14.6115 44.6961 2M43.2715 64.1802C29.0467 66.6309 15.5727 68.4284 2 74"
+                      stroke="#FF8E8E" stroke-width="3" stroke-linecap="round" />
+                  </svg>
+                </span>
+                <span class="text-black">start a project</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-arrow-up-right">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </button>
+            </div>
+
+            <span class="star-2 lb-rt-move">
+              <svg width="102" height="102" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M51 0L71.9162 30.0838L102 51L71.9162 71.9162L51 102L30.0838 71.9162L0 51L30.0838 30.0838L51 0Z"
+                  fill="#00A146" />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section start here  -->
+  <footer class="py-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <h1 class="font-max mb-32">
+            DigiBoost
+          </h1>
+          <span class="d-block text-sm">Get In touch..</span>
+          <span class="d-block text-sm">info@digiboost.com</span>
+        </div>
+        <div class="col-12 col-lg-4">
+          <h2 class="footer-heading">Important Links</h2>
+          <ul>
+            <li>
+              <a href="#">Working Process</a>
+            </li>
+            <li>
+              <a href="#">Recent Works</a>
+            </li>
+            <li>
+              <a href="#">Our Blogs</a>
+            </li>
+            <li>
+              <a href="#">Our Community</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-4">
+          <h2 class="footer-heading">Locations</h2>
+          <p class="text-sm">5318 Coffeen Avenue Paddington, <br>
+            Surry Hills 205318, Sydney, Australia</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- nav dropdown  -->
+  <div id="dropdownArea" class="navigation bg-black dropdown-content">
+    <div class="container">
+      <div class="row">
+        <div class="nav-button">
+          <button class="cross-button" onclick="toggleMenu()">
+            <svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="44" cy="44" r="44" fill="#5C5C5C"/>
+              <path d="M58.08 29.9199L29.92 58.0799" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M29.92 29.9199L58.08 58.0799" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </button>
+        </div>
+        <div class="col-auto my-auto">
+          <ul class="pages">
+            <li>
+              <a class="capital font-max" onmouseover="newImage('./src/assets/image/content-image/team-1.png')"
+                onmouseout="oldImg()" href="about-us.html"><span>about us</span></a>
+            </li>
+            <li>
+              <a class="capital font-max" onmouseover="newImage('./src/assets/image/content-image/team-2.png')"
+                onmouseout="oldImg()" href="works.html"><span>works</span></a>
+            </li>
+            <li>
+              <a class="capital font-max" onmouseover="newImage('./src/assets/image/content-image/team-3.png')"
+                onmouseout="imageReset()" href="team.html"><span>teams</span></a>
+            </li>
+            <li>
+              <a class="capital font-max" onmouseover="newImage('./src/assets/image/content-image/team-4.png')"
+                onmouseout="oldImg()" href="contact-us.html"><span>contact us</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 mx-auto hide-md">
+          <div class="image-container text-center">
+            <img id="changedImage" src="./src/assets/image/content-image/nav-image.png" alt="laughing peoples">
+          </div>
+        </div>
+        <div class="col-12">
+          <ul class="social">
+            <li class="social-links capital" onmouseover="newImage('./src/assets/image/content-image/team-4.png')"
+              onmouseout="oldImg()">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8.5" r="8" fill="#FFB3B3" />
+              </svg>
+              <h4>Dribble</h4>
+            </li>
+            <li class="social-links capital my-auto"
+              onmouseover="newImage('./src/assets/image/content-image/team-3.png')" onmouseout="oldImg()">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8.5" r="8" fill="#89FFBC" />
+              </svg>
+              <h4>behance</h4>
+            </li>
+            <li class="social-links capital" onmouseover="newImage('./src/assets/image/content-image/team-2.png')"
+              onmouseout="oldImg()">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8.5" r="8" fill="#FF8E8E" />
+              </svg>
+              <h4>Instagram</h4>
+            </li>
+            <li class="social-links capital" onmouseover="newImage('./src/assets/image/content-image/team-1.png')"
+              onmouseout="oldImg()">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8.5" r="8" fill="rgb(23, 0, 141)" />
+              </svg>
+              <h4>facebook</h4>
+            </li>
+            <li class="social-links capital" onmouseover="newImage('./src/assets/image/content-image/team-4.png')"
+              onmouseout="oldImg()">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8.5" r="8" fill="#89FFBC" />
+              </svg>
+              <h4>LinkedIn</h4>
+            </li>
+            <li class="social-links capital" onmouseover="newImage('./src/assets/image/content-image/team-2.png')"
+              onmouseout="oldImg()">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8.5" r="8" fill="#2BFD86" />
+              </svg>
+              <h4>Twitter</h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- essentials  -->
+
+  <!-- fontawesome kit  -->
+  <script src="https://kit.fontawesome.com/38554ff06d.js"></script>
+  <!-- carousel -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <!-- plugin javascript  -->
+  <script src="./src/assets/js/jquery.min.js"></script>
+  <!-- carousel  -->
+  <script src="./src/assets/js/owl.carousel.min.js"></script>
+  <!-- bundle js files  -->
+  <script src="./src/assets/js/bootstrap.bundle.min.js"></script>
+  <!-- custom javascript  -->
+  <script src="./src/assets/js/main.js"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+
+</body>
+
+</html>

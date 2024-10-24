@@ -1,0 +1,109 @@
+.dec-item-bf::before{
+    content: '';
+}
+.dec-item-af::after{
+    content: '';
+}
+
+.d-circle::before,
+.d-circle::after{
+    content: '';
+}
+.d-star::before,
+.d-star::after{
+    content: '';
+}
+.d-arrow-1::before,
+.d-arrow-1::after{
+    content: '';
+    
+}
+.d-arrow-2::before,
+.d-arrow-2::after{
+    content: '';
+    
+}
+.d-arrow-3::before,
+.d-arrow-3::after{
+    content: '';
+    
+}
+.d-arrow-4::before,
+.d-arrow-4::after{
+    content: '';
+
+}
+.d-p-lt::before,
+.d-p-lt::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(10px , 10px);
+}
+.d-p-lt{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.d-p-rt::before, 
+.d-p-rt::after{
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(10px , 10px);
+}
+.d-p-rt{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.d-p-lb::before, 
+.d-p-lb::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(10px , 10px);
+}
+.d-p-lb{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.d-p-rb::before, 
+.d-p-rb::after{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(10px , 10px);
+}
+.d-p-rb{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.d-p-rc::before, 
+.d-p-rc::after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.d-sz-sm::before,
+.d-sz-sm::after{
+color: antiquewhite;
+}
+.d-sz-md::before,
+.d-sz-md::after{
+    color: antiquewhite
+
+}
+.d-sz-lg::before,
+.d-sz-lg::after{
+    color: antiquewhite
+
+}
+.d-sz-xl::before,
+.d-sz-xl::after{
+    color: antiquewhite
+
+}

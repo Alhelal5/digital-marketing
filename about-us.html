@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digital Marketing</title>
+  <!-- icon  -->
+  <link rel="icon" href="./icon.png">
+  <!-- bootstrap cdn  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" href="./src/assets/css/bootstrap.min.css">
+  <!-- Fontshare clash display  -->
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600&f[]=manrope@700,400,600,500&display=swap" rel="stylesheet">
+  <!-- feather icon  -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- custom css  -->
+  <link rel="stylesheet" href="./src/assets/css/pages.css">
+  <link rel="stylesheet" href="./src/assets/css/animation.css">
+  <!-- carousel css-->
+  <link rel="stylesheet" href="./src/assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./src/assets/css/owl.theme.default.min.css">
+</head>
+
+<body>
+    
+  <div id="nav-color">
+    <div id="navbar" class="nav fade-in">
+      <div class="container">
+        <div class="row">
+          <div class="col-auto me-auto logo">
+            <a id="buttonClick" href="./index.html"><img src="./src/assets/image/DigiBoost.png" alt=""></a>
+          </div>
+          <div class="col-auto ms-auto d-flex">
+            <div class="work-together">
+              <button class="primary-button ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-send">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <a href="./contact-us.html" id="dropId" class="primary">Let’s Work Together</a>
+              </button> 
+            </div>
+            <div class="menu-button my-auto dropdown">
+              <button id="buttonClick2" onclick="toggleMenu()" class="dropbtn da-menu">
+                <svg width="54" height="52" viewBox="0 0 54 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M36 18H18" stroke="#2BFD86" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M36 26H24" stroke="#2BFD86" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M36 34H18" stroke="#2BFD86" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- about-us section start  -->
+  <section class="da-about-us py-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-10 position-relative">
+          <h6 class="sub-heading onFocusAnimate" data-animationName="slidetobottom">
+              about us
+            </h6>
+          <h1 class="onFocusAnimate" data-animationName="slideInRightFadeIn">
+              Discover Our Passion for Effective Digital Marketing
+          </h1>
+          
+          <svg class="about-us-bg-1 windmill" width="145" height="144" viewBox="0 0 145 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M73.4972 2.90506L75.7599 33.344C75.9942 36.4958 80.314 37.1895 81.5234 34.2696L93.2267 6.01315C93.7005 4.8693 95.4208 5.43674 95.1208 6.63811L87.7439 36.1786C86.9772 39.2489 90.871 41.2606 92.9315 38.8587L112.86 15.6283C113.666 14.688 115.125 15.7642 114.465 16.8124L98.2666 42.5215C96.5761 45.2046 99.6623 48.3339 102.369 46.6809L128.467 30.7398C129.525 30.0935 130.581 31.5693 129.627 32.362L106.284 51.7759C103.84 53.8078 105.819 57.7459 108.908 56.9982L138.569 49.8174C139.774 49.5255 140.328 51.255 139.177 51.7173L110.983 63.0383C108.03 64.2239 108.711 68.5858 111.885 68.8145L142.248 71.0026C143.485 71.0918 143.485 72.9082 142.248 72.9974L111.885 75.1855C108.711 75.4142 108.03 79.7761 110.983 80.9617L139.177 92.2827C140.328 92.7449 139.775 94.4745 138.569 94.1826L108.908 87.0018C105.819 86.2541 103.84 90.1922 106.284 92.2241L129.627 111.638C130.581 112.431 129.525 113.906 128.467 113.26L102.369 97.3191C99.6623 95.6661 96.5761 98.7954 98.2666 101.479L114.465 127.188C115.125 128.236 113.666 129.312 112.86 128.372L92.9315 105.141C90.871 102.739 86.9772 104.751 87.7439 107.821L95.1208 137.362C95.4208 138.563 93.7005 139.131 93.2267 137.987L81.5234 109.73C80.314 106.811 75.9942 107.504 75.7599 110.656L73.4972 141.095C73.4055 142.329 71.5945 142.329 71.5028 141.095L69.2401 110.656C69.0058 107.504 64.686 106.811 63.4766 109.73L51.7733 137.987C51.2995 139.131 49.5792 138.563 49.8792 137.362L57.2561 107.821C58.0228 104.751 54.129 102.739 52.0685 105.141L32.1404 128.372C31.3337 129.312 29.8749 128.236 30.5353 127.188L46.7334 101.479C48.4239 98.7954 45.3377 95.6661 42.6314 97.3191L16.5333 113.26C15.4753 113.906 14.4195 112.431 15.3726 111.638L38.7163 92.2241C41.1595 90.1922 39.1807 86.2541 36.0921 87.0018L6.43111 94.1826C5.22553 94.4745 4.67206 92.745 5.8232 92.2827L34.0174 80.9617C36.97 79.7761 36.2887 75.4142 33.1152 75.1855L2.7524 72.9974C1.51493 72.9082 1.51488 71.0918 2.7524 71.0026L33.1152 68.8145C36.2887 68.5858 36.97 64.2239 34.0174 63.0383L5.8232 51.7173C4.6721 51.2551 5.22549 49.5255 6.43112 49.8174L36.0921 56.9982C39.1806 57.7459 41.1595 53.8078 38.7163 51.7759L15.3726 32.362C14.4194 31.5693 15.4753 30.0935 16.5333 30.7397L42.6314 46.6809C45.3377 48.3339 48.4239 45.2046 46.7334 42.5215L30.5353 16.8124C29.8749 15.7643 31.3337 14.6879 32.1404 15.6283L52.0685 38.8587C54.129 41.2606 58.0228 39.2489 57.2561 36.1785L49.8792 6.6381C49.5792 5.43688 51.2995 4.86918 51.7733 6.01317L63.4766 34.2696C64.686 37.1895 69.0058 36.4958 69.2401 33.344L71.5028 2.90507C71.5945 1.67055 73.4055 1.6706 73.4972 2.90506Z" stroke="#FEED11" stroke-width="2"/>
+            </svg>
+            
+            <svg class="about-us-bg-2 delay-1s breathing hide-md" width="159" height="148" viewBox="0 0 159 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.62704 28.9096C36.4455 11.2867 78.0171 -4.49388 118.998 3.43512C127.552 5.09003 139.861 7.76926 145.909 15.0303C154.681 25.5618 157.282 47.6573 148.609 58.8137C148.407 59.0737 148.184 59.345 147.941 59.6255M147.941 59.6255C143.325 64.9612 131.672 73.6217 124.551 70.5042C117.22 67.2946 121.313 58.632 125.295 55.4703C134.68 48.0177 142.408 51.8765 147.941 59.6255ZM147.941 59.6255C154.492 68.7998 157.968 83.4271 157.477 91.1919C156.769 102.412 154.306 116.949 144.665 124.833C133.045 134.337 118.418 140.483 103.652 139.697M101.546 138.497C102.722 137.599 106.416 133.689 108.184 133.955M101.535 139.932C103.522 141.882 105.741 143.564 107.582 145.657C107.953 146.078 108.519 146.211 108.515 146.733" stroke="#2BFD86" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4"/>
+              </svg>
+          <p class="text-lg mt-32 onFocusAnimate" data-animationName="fade-in">We take pride in our ability to drive real results for our clients, and our case studies are a testament to the impact our work has on businesses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- our mission section start  -->
+  <section class="da-our-mission animate-move-bg py-100 bg-dark">
+    <div class="background"></div>
+      <div class="container mask-container">
+        <div class="row">
+          <div class="col-12 col-md-10 mx-auto text-center">
+            <div class="onFocusAnimate" data-animationName="slidetobottom">
+              <h6 class="sub-heading secondary">
+                our mission
+              </h6>
+            </div>
+            <h1 class="font-max text-white onFocusAnimate" data-animationName="fade-in">
+              Empowering Your Brand with Effective Digital Marketing
+            </h1>
+          </div>
+        </div>
+      </div>
+  </section>
+
+<!-- our story section start  -->
+  <section class="da-story py-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-7">
+          <div class="from-hidden">
+            <h6 class="sub-heading onFocusAnimate" data-animationName="slidetobottom">
+              our story
+            </h6>
+          </div>
+          <h1 class=" mb-32  onFocusAnimate" data-animationName="fade-in">
+            Helping Businesses Thrive with Innovative Digital Marketing Solutions
+          </h1>
+          <div class="onFocusAnimate" data-animationName="fade-in">
+            <p class="text-sm onFocusAnimate" data-animationName="slideInRightFadeIn">Your brand is the most important asset in your company let our team of professionals help you with a good strategy took the runway next with an edgy collection featuring dyed denim pieces. The collection included patchwork denim, a trend that has recently exploded in younger generations. Playing on aspects of sustainability, the pieces appeared to be upcycled to establish dimension and flair. This take on grunge and streetwear took sustainable fashion to an entirely new level.</p> <br>
+          <p class="text-sm onFocusAnimate" data-animationName="slideInLeftFadeIn">Our commitment to excellence is reflected in the results we deliver for our clients. From small businesses to large enterprises, we have a proven track record of helping organizations achieve success online.</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-5">
+          <div class="image-container position-relative mx-auto">
+            <svg class="our-story-bg-1 windmill" width="168" height="168" viewBox="0 0 168 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M86.9877 3.87332L89.5177 31.6805C89.9692 36.6429 96.608 37.9634 98.9241 33.5516L111.903 8.82925C113.601 5.59521 118.51 7.6286 117.423 11.1159L109.119 37.7746C107.638 42.532 113.266 46.2926 117.094 43.1029L138.546 25.2293C141.352 22.8912 145.109 26.6483 142.771 29.4545L124.897 50.9061C121.707 54.7343 125.468 60.3624 130.225 58.8805L156.884 50.5766C160.371 49.4903 162.405 54.3993 159.171 56.0971L134.448 69.0759C130.037 71.392 131.357 78.0308 136.32 78.4823L164.127 81.0123C167.764 81.3433 167.764 86.6567 164.127 86.9877L136.32 89.5177C131.357 89.9692 130.037 96.608 134.448 98.9241L159.171 111.903C162.405 113.601 160.371 118.51 156.884 117.423L130.225 109.119C125.468 107.638 121.707 113.266 124.897 117.094L142.771 138.546C145.109 141.352 141.352 145.109 138.546 142.771L117.094 124.897C113.266 121.707 107.638 125.468 109.119 130.225L117.423 156.884C118.51 160.371 113.601 162.405 111.903 159.171L98.9241 134.448C96.608 130.037 89.9692 131.357 89.5177 136.32L86.9877 164.127C86.6567 167.764 81.3433 167.764 81.0123 164.127L78.4823 136.32C78.0308 131.357 71.392 130.037 69.0759 134.448L56.0971 159.171C54.3993 162.405 49.4903 160.371 50.5766 156.884L58.8805 130.225C60.3624 125.468 54.7343 121.707 50.9061 124.897L29.4545 142.771C26.6483 145.109 22.8912 141.352 25.2293 138.546L43.1029 117.094C46.2926 113.266 42.532 107.638 37.7746 109.119L11.1159 117.423C7.62857 118.51 5.59525 113.601 8.82924 111.903L33.5515 98.9241C37.9634 96.608 36.6429 89.9692 31.6805 89.5177L3.87333 86.9877C0.235748 86.6567 0.235783 81.3433 3.87332 81.0123L31.6805 78.4823C36.6429 78.0308 37.9634 71.392 33.5516 69.0759L8.82925 56.0971C5.59521 54.3993 7.6286 49.4903 11.1159 50.5766L37.7746 58.8805C42.532 60.3624 46.2926 54.7343 43.1029 50.9061L25.2293 29.4545C22.8911 26.6483 26.6483 22.8912 29.4545 25.2293L50.9061 43.1029C54.7343 46.2926 60.3624 42.532 58.8805 37.7746L50.5766 11.1159C49.4903 7.62857 54.3993 5.59525 56.0971 8.82924L69.0759 33.5515C71.392 37.9634 78.0308 36.6429 78.4823 31.6805L81.0123 3.87333C81.3433 0.235748 86.6567 0.235783 86.9877 3.87332Z" stroke="#FEED11" stroke-width="2"/>
+              </svg>
+              <svg class="our-story-bg-2 rotate" width="90" height="97" viewBox="0 0 90 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M72.5254 10.8594L67.4212 34.959L89.0998 42.9987L69.6871 56.1477L79.7443 78.3621L57.3949 72.8581L49.9392 96.2343L37.745 75.3013L17.1439 86.146L22.2481 62.0464L0.569491 54.0067L19.9822 40.8577L9.92499 18.6433L32.2744 24.1474L39.7301 0.771083L51.9243 21.7041L72.5254 10.8594Z" fill="#FF8E8E"/>
+                </svg>
+              <div class="bottom-image top-left">
+                  <img class="image" src="./src/assets/image/content-image/our-story-top.png" alt="">
+              </div>
+              <div class="top-image bottom-right ">
+                  <img class="image " src="./src/assets/image/content-image/our-story-bottom.png" alt="">
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- our expertise section start  -->
+  <section class="expertise py-100 primary-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="from-hidden">
+            <h6 class="sub-heading onFocusAnimate" data-animationName="slidetobottom">
+              OUR EXPERTISE
+            </h6>
+          </div>
+          <div class="position-relative">
+            <h1 class=" onFocusAnimate" data-animationName="slideInLeft">
+              Tailored Digital Marketing <br> Solutions to Meet Your Business <br> Needs
+            </h1>
+            <svg class="expertise-shape hide-md breathing" width="190" height="152" viewBox="0 0 190 152" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M184.833 1C187.991 11.1075 191.114 29.2929 185.01 38.839C180.641 45.6739 172.175 52.4011 163.725 55.3535M163.725 55.3535C161.68 56.0677 159.637 56.561 157.653 56.7814C154.945 57.0822 147.26 58.5454 147.26 54.2055C147.26 51.6373 153.233 52.1234 155.077 52.1626C158.81 52.242 161.596 53.4148 163.725 55.3535ZM163.725 55.3535C166.432 57.8199 168.075 61.5259 169.244 65.7971C173.073 79.7808 171.696 92.3563 163.337 104.658C150.547 123.481 128.796 140.898 104.891 140.898M100 140.595C100.199 138.604 101.958 135.836 102.995 134.147C103.668 133.05 104.339 131.812 105.159 130.822C105.58 130.313 106.027 130.155 106.19 129.504M100 142.143C101.676 143.818 103.644 145.08 105.302 146.785C106.745 148.27 108.452 149.369 110.059 150.654"
+                stroke="#FE5F5F" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4" />
+              <path d="M50 29L70.5061 58.4939L100 79L70.5061 99.5061L50 129L29.4939 99.5061L0 79L29.4939 58.4939L50 29Z"
+                fill="#00A146" />
+            </svg>
+          </div>
+        </div>
+        <div class="col-12 xp">
+          <div class="row">
+            <div class="col-12 col-lg-6 xp-details animate-fast onFocusAnimate" data-animationName="slideInBottom">
+              <a class="h3" href="#">
+                <span onmouseover="chngImgById('./src/assets/image/content-image/team-1.png', 'changedImage1')"
+                  onmouseout="imageReset('changedImage1')">Search Engine Optimization (SEO)</span>
+              </a>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="animate-fast onFocusAnimate" data-animationName="slideInBottom">
+                <p class="text-sm changed-image">The process of optimizing your <span><img id="changedImage1" src=""
+                      class="mx-auto changedImage101"></span> website to rank higher in search engine results pages
+                  (SERPs) and drive organic traffic to your website.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 xp">
+          <div class="row">
+            <div class="col-12 col-lg-6 xp-details animate-fast onFocusAnimate" data-animationName="slideInBottom">
+              <a class="h3" href="#">
+                <span onmouseover="chngImgById('./src/assets/image/content-image/team-2.png', 'changedImage2')"
+                  onmouseout="imageReset('changedImage2')">Social Media Marketing</span>
+              </a>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="animate-fast onFocusAnimate" data-animationName="slideInBottom">
+                <p class="text-sm  changed-image">Utilizing social media <span><img id="changedImage2" src=""
+                      class="mx-auto changedImage101"></span> platforms to build brand awareness, engage with customers,
+                  and
+                  drive website traffic and sales.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 xp">
+          <div class="row">
+            <div class="col-12 col-lg-6 xp-details animate-fast onFocusAnimate" data-animationName="slideInBottom">
+              <a class="h3" href="#">
+                <span onmouseover="chngImgById('./src/assets/image/content-image/team-3.png', 'changedImage3')"
+                  onmouseout="imageReset('changedImage3')">Content Marketing</span>
+              </a>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="animate-fast onFocusAnimate" data-animationName="slideInBottom">
+                <p class="text-sm changed-image">Creating valuable and <span><img id="changedImage3" src=""
+                      class="mx-auto changedImage101"></span> informative content, such as blog posts, videos, and
+                  infographics, to attract and engage with customers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 xp">
+          <div class="row">
+            <div class="col-12 col-lg-6 xp-details animate-fast onFocusAnimate" data-animationName="slideInBottom">
+              <a class="h3" href="#">
+                <span onmouseover="chngImgById('./src/assets/image/content-image/team-4.png', 'changedImage4')"
+                  onmouseout="imageReset('changedImage4')">Email Marketing</span>
+              </a>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="animate-fast onFocusAnimate" data-animationName="slideInBottom">
+                <p class="text-sm changed-image">Sending targeted and <span><img id="changedImage4" src=""
+                      class="mx-auto changedImage101"></span> personalized emails to subscribers with the goal of
+                  building
+                  relationships, promoting products, and driving conversions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ start here   -->
+  <section class="da-faq py-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 position-relative">
+          <div>
+            <div class="from-hidden">
+              <h6 class="sub-heading onFocusAnimate" data-animationName="slidetobottom">
+                SUCCESS STORIES
+              </h6>
+            </div>
+            <h1 class=" onFocusAnimate" data-animationName="slideInLeft">
+              Our Digital Marketing Case Studies That Speak for Themselves
+            </h1>
+          </div>
+            
+        </div>
+        <div class="col-12 ">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="accordion accordion-flush" id="accordionFlushExample1">
+                <div class="accordion-item">
+                  <div class="accordion-header" id="flush-headingOne">
+                    <button id="accordion-buttons" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      <h5>How does search engine optimization (SEO) work?</h5>
+                    </button>
+                  </div>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample1">
+                    <div class="accordion-body text-sm">
+                      Sending targeted and personalized emails to subscribers with the goal of building relationships, promoting products, and driving conversions.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      <h5>How does SEO affect your sales?</h5>
+                    </button>
+                  </div>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample1">
+                    <div class="accordion-body text-sm">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <h5>What is online reputation management (ORM)?</h5>
+                    </button>
+                  </div>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample1">
+                    <div class="accordion-body text-sm">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      <h5>How can content marketing help my business?</h5>
+                    </button>
+                  </div>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample1">
+                    <div class="accordion-body text-sm">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="accordion accordion-flush" id="accordionFlushExample2">
+                <div class="accordion-item">
+                  <div class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                      <h5>How can content marketing help my business?</h5>
+                    </button>
+                  </div>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample2">
+                    <div class="accordion-body text-sm">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" id="flush-headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                      <h5>What do you need to start your marketing?</h5>
+                    </button>
+                  </div>
+                  <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample2">
+                    <div class="accordion-body text-sm">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" id="flush-headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                      <h5>How does  CRO affect your sales?</h5>
+                    </button>
+                  </div>
+                  <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample2">
+                    <div class="accordion-body text-sm">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" id="flush-headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                      <h5>What is digital analytics and how can it help me?</h5>
+                    </button>
+                  </div>
+                  <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample2">
+                    <div class="accordion-body text-sm">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- our team section start  -->
+  <section class="our-team py-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-9 mb-80 position-relative">
+          <div>
+            <div class="from-hidden">
+              <h6 class="sub-heading onFocusAnimate" data-animationName="slidetobottom">
+                OUR TEAM
+              </h6>
+            </div>
+            <h1 class=" onFocusAnimate" data-animationName="slideInLeft">Meet the Minds Driving Our <br> Digital Marketing Strategies</h1>
+          </div>
+          <div class="team-bg hide-md">
+          <svg class="breathing" width="216" height="248" viewBox="0 0 216 248" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1 80.0399C11.9475 78.0495 20.8223 67.3507 31.9578 64.1692C49.6499 59.1143 66.1045 60.0142 84.0767 58.683C92.3942 58.0668 102.964 55.5848 112.625 51.4048M112.625 51.4048C122.768 47.0163 131.909 40.7564 136.392 32.8195C140.781 25.0465 148.241 7.35008 136.392 2.2535C122.658 -3.65332 102.668 12.4669 102.495 26.5495C102.395 34.6417 107.234 43.6291 112.625 51.4048ZM112.625 51.4048C116.583 57.113 120.838 62.1681 123.656 65.7366C149.206 98.0974 178.793 127.115 204.087 159.688C211.081 168.694 215.527 178.198 214.178 189.666C213.024 199.47 210.978 209.357 202.912 214.942C190.791 223.333 178.015 237.555 163.235 240.511M160.51 239.093C162.464 236.922 163.15 233.725 164.795 231.297C165.622 230.076 166.374 229.088 166.832 227.714M161.142 240.99C162.66 242.339 163.258 243.437 165.708 243.518C169.357 243.64 171.442 245.191 174.418 246.679"
+              stroke="#00A146" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 4" />
+          </svg>
+        </div>
+        </div>
+        <div class="col-12 slider owl-carousel owl-theme">
+          <div class="item ">
+            <div class="image">
+              <img class="rounded-circle" src="./src/assets/image/content-image/team-2.png" alt="">
+            </div>
+            <div class="text-center">
+              <h5>Sophia Lee</h5>
+              <span class="sm">
+                Senior SEO engineer
+              </span>
+            </div>
+          </div>
+          <div class="item ">
+            <div class="image">
+              <img class="rounded-circle" src="./src/assets/image/content-image/team-1.png" alt="">
+            </div>
+            <div class="text-center">
+              <h5>Sophia aLee</h5>
+              <span class="sm">
+                Senior SEO engineer
+              </span>
+            </div>
+          </div>
+          <div class="item ">
+            <div class="image">
+              <img class="rounded-circle" src="./src/assets/image/content-image/team-3.png" alt="">
+            </div>
+            <div class="text-center">
+              <h5>Sophia Lee</h5>
+              <span class="sm">
+                Senior SEO engineer
+              </span>
+            </div>
+          </div>
+          <div class="item ">
+            <div class="image">
+              <img class="rounded-circle" src="./src/assets/image/content-image/team-4.png" alt="">
+            </div>
+            <div class="text-center">
+              <h5>Sophia Lee</h5>
+              <span class="sm">
+                Senior SEO engineer
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- brands section start here  -->
+  <section class="brands py-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-9 position-relative">
+          <div class="from-hidden">
+            <h6 class="sub-heading onFocusAnimate" data-animationName="slidetobottom">
+              BRANDS
+            </h6>
+          </div>
+          <h1 class="onFocusAnimate" data-animationName="slideInLeftFadeIn">Trusted digital marketing partner for over 70+ brands</h1>
+          <span class="brand-bg hide-md ">
+            <svg class="breathing" width="173" height="190" viewBox="0 0 173 190" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1 45.9085L1.12173 45.7151C8.84012 33.4562 15.7605 22.4648 28.3936 13.8241C39.8182 6.01015 56.0898 1.19448 69.6941 1.01063C83.2984 0.826848 96.2641 2.96527 105.696 12.1355C116.655 20.1175 128.524 39.569 129.613 54.7959M129.613 54.7959C129.667 55.545 129.694 56.2839 129.694 57.0107C130.09 63.3389 128.039 79.2253 123.194 84.5107C119.676 88.3483 112.131 95.9906 104.194 93.0107C99.1497 93.9279 97.253 85.5498 97.253 81.3701C97.253 72.88 99.5425 68.5934 106.634 63.1702C114.468 57.1796 122.272 54.6808 129.613 54.7959ZM129.613 54.7959C151.248 55.1351 168.874 78.175 171.46 101.446C172.266 108.698 170.557 120.665 166.694 127.011C161.373 135.752 158.226 142.85 151.102 149.854C136.194 164.511 123.293 171.455 107.385 181M100.062 183.203C100.062 177.467 100.834 171.793 101.752 166.136C102.294 162.802 102.098 158.355 104.625 155.828M100.823 184.724C107.187 184.724 113.728 186.999 119.834 188.526"
+              stroke="#2BFD86" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 4" />
+          </svg>
+          </span>
+        </div>
+        <div class="brand-item">
+          <div id="brand-slider-track" class="slider-track">
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/paperfly-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/guidence-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/dhakacast-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/raj-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/augmedix-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/humanity-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/paperfly-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/guidence-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/dhakacast-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/raj-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/augmedix-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/humanity-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/dhakacast-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/raj-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/augmedix-logo.png" alt="">
+            </div>
+            <div class="slider-item">
+              <img class="imagee" src="./src/assets/image/content-image/humanity-logo.png" alt="">
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- testimonial section start here  -->
+  <section class="testimonial py-100 bg-black">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-80 position-relative">
+          <div class="from-hidden">
+            <h6 class="sub-heading onFocusAnimate" data-animationName="slidetobottom">
+              testimonial
+            </h6>
+          </div>
+          <h1 class="text-white onFocusAnimate" data-animationName="slideInRightFadeIn">Our awesome customers <br> Love Working with Us </h1>
+          <svg class="testimonial-bg hide-md breathing" width="190" height="152" viewBox="0 0 190 152" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M184.833 1C187.991 11.1075 191.114 29.2929 185.01 38.839C180.641 45.6739 172.175 52.4011 163.725 55.3535M163.725 55.3535C161.68 56.0677 159.637 56.561 157.653 56.7814C154.945 57.0822 147.26 58.5454 147.26 54.2055C147.26 51.6373 153.233 52.1234 155.077 52.1626C158.81 52.242 161.596 53.4148 163.725 55.3535ZM163.725 55.3535C166.432 57.8199 168.075 61.5259 169.244 65.7971C173.073 79.7808 171.696 92.3563 163.337 104.658C150.547 123.481 128.796 140.898 104.891 140.898M100 140.595C100.199 138.604 101.958 135.836 102.995 134.147C103.668 133.05 104.339 131.812 105.159 130.822C105.58 130.313 106.027 130.155 106.19 129.504M100 142.143C101.676 143.818 103.644 145.08 105.302 146.785C106.745 148.27 108.452 149.369 110.059 150.654"
+              stroke="#FE5F5F" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 4" />
+            <path d="M50 29L70.5061 58.4939L100 79L70.5061 99.5061L50 129L29.4939 99.5061L0 79L29.4939 58.4939L50 29Z"
+              fill="#89FFBC" />
+          </svg>
+
+        </div>
+        <div id="carouselIndicators" class="col-12 owl-carousel test owl-theme">
+          <div class="card text-center">
+            <img class="mx-auto mb-32" src="./src/assets/image/content-image/testimonial-1.png" alt="">
+            <h5 class="secondary mb-3">Sophia Lee</h5>
+            <span class="text-sm mb-3">Founder and CEO of Eduraka</span>
+            <svg width="43" height="35" viewBox="0 0 83 75" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="83" height="75" fill="url(#pattern0)" />
+              <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_108_0" transform="scale(0.0120482 0.0133333)" />
+                </pattern>
+                <image id="image0_108_0" width="83" height="75"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAABLCAYAAAAMN7v2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKzSURBVHhe7dtPTxNBHMbxnxWxrMiWEmkISjnpSbjhhXqDg5GjJ+WmifHPzRMvQO0r8AUY4t2D3EG9i+FuiYkhHigJiasiOr91Liq1nZ1nZxt9Pglpp5eh3852d5r2WBRF34UgSvaWABgTiDGBGBOIMYEYE4gxgRgTiDGBGBOIMYEYE4gxgYJ/ajQwVZHBi+NSistSqpg/c3uU5GVLko2WHfnTeQamYjN37ef4L3Pvr76Rg+09O+pd7jH1H47vzEm5UZfBmVrHJ/C73Yfr0n60bkfZlOfrEi2dl6H56XTuXn248jTTC5nbYa6rYOLFstTfP5DKyuU0Zq8hfWlEnXtibdm8kJecQvrIJaauxHNb99OAIemLVXt2LY0Yem4Fj3nmyZJUm4t2FI4eCZOvb0p09YJ9JDxozLHHizJ8Y9aOwtEVqatRT25FgsUcvj4rI3fn7CisanOh8JAKElMPsdGVhh2FpSeb0+aF7AeQmOXGdGErY9RcKfQLSMyiVqUeEUWctTvxjqk7iqJWpR4R/cR7BzRirinHMlwKfTI7jC9vd+SwndhHftXLdnLcXFOeynAp1G3uwraTVXM5FDuexXfNNrFttou+Jl/dct7doOY+ivdhftLxyRzuJbAn4xryYLudW0gFOQG5+Ly5Y++F97Xlfui68I55vB7be2HpmdzVtwzvgy6Cr8x/GWMCMSaQ96XR2a17ciKHi/b91U35ePu5Hf1J3zP1M9M8dJu7E65MIMYEYkwgxgRiTCDGBGJMIMYEYkwgxgRiTCDGBGJMIMYEYkwgxgRiTCDGBGJMIMYEYkwgxgRiTCDGBPL/fmZzQUrxkB3hJBvv0i8DdKI/V8nr90bd5u4k999O/k94mAMxJhBjAjEmEGMCMSYQYwIxJhBjAjEmEGMCMSYQYwIxJhBjwoj8AI0skoof3g/HAAAAAElFTkSuQmCC" />
+              </defs>
+            </svg>
+            <p class="xsm">“Working with this digital marketing team has been a game-changer for our business. Their
+              personalized attention and custom strategies have helped us reach new levels of success online.</p>
+          </div>
+          <div class="card text-center">
+            <img class="mx-auto mb-32" src="./src/assets/image/content-image/testimonial-2" alt="">
+            <h5 class="secondary mb-3">Sophia Lee</h5>
+            <span class="text-sm mb-3">Founder and CEO of Eduraka</span>
+            <svg width="43" height="35" viewBox="0 0 83 75" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="83" height="75" fill="url(#pattern1)" />
+              <defs>
+                <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_108_8" transform="scale(0.0120482 0.0133333)" />
+                </pattern>
+                <image id="image0_108_8" width="83" height="75"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAABLCAYAAAAMN7v2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKzSURBVHhe7dtPTxNBHMbxnxWxrMiWEmkISjnpSbjhhXqDg5GjJ+WmifHPzRMvQO0r8AUY4t2D3EG9i+FuiYkhHigJiasiOr91Liq1nZ1nZxt9Pglpp5eh3852d5r2WBRF34UgSvaWABgTiDGBGBOIMYEYE4gxgRgTiDGBGBOIMYEYE4gxgYJ/ajQwVZHBi+NSistSqpg/c3uU5GVLko2WHfnTeQamYjN37ef4L3Pvr76Rg+09O+pd7jH1H47vzEm5UZfBmVrHJ/C73Yfr0n60bkfZlOfrEi2dl6H56XTuXn248jTTC5nbYa6rYOLFstTfP5DKyuU0Zq8hfWlEnXtibdm8kJecQvrIJaauxHNb99OAIemLVXt2LY0Yem4Fj3nmyZJUm4t2FI4eCZOvb0p09YJ9JDxozLHHizJ8Y9aOwtEVqatRT25FgsUcvj4rI3fn7CisanOh8JAKElMPsdGVhh2FpSeb0+aF7AeQmOXGdGErY9RcKfQLSMyiVqUeEUWctTvxjqk7iqJWpR4R/cR7BzRirinHMlwKfTI7jC9vd+SwndhHftXLdnLcXFOeynAp1G3uwraTVXM5FDuexXfNNrFttou+Jl/dct7doOY+ivdhftLxyRzuJbAn4xryYLudW0gFOQG5+Ly5Y++F97Xlfui68I55vB7be2HpmdzVtwzvgy6Cr8x/GWMCMSaQ96XR2a17ciKHi/b91U35ePu5Hf1J3zP1M9M8dJu7E65MIMYEYkwgxgRiTCDGBGJMIMYEYkwgxgRiTCDGBGJMIMYEYkwgxgRiTCDGBGJMIMYEYkwgxgRiTCDGBPL/fmZzQUrxkB3hJBvv0i8DdKI/V8nr90bd5u4k999O/k94mAMxJhBjAjEmEGMCMSYQYwIxJhBjAjEmEGMCMSYQYwIxJhBjwoj8AI0skoof3g/HAAAAAElFTkSuQmCC" />
+              </defs>
+            </svg>
+            <p class="xsm">
+              Working with this digital marketing team has been a game-changer for our business. Their personalized
+              attention and custom strategies have helped us reach new levels of success online.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- start a project section start  -->
+  <section class="start-project py-100 secondary-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-7 mx-auto text-center">
+          <div class="ready-left-right position-relative">
+            <div class="star-1 lt-rb-move">
+              <svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30.5 0L43.0087 17.9913L61 30.5L43.0087 43.0087L30.5 61L17.9913 43.0087L0 30.5L17.9913 17.9913L30.5 0Z" fill="#FE5F5F"/>
+                </svg>  
+            </div>
+            <div class="position-relative">
+              <img class="img-left-top rotate" src="./src/assets/image/bg/yellow-star.svg" alt="">
+              <h1 class="font-max mb-64 onFocusAnimate" data-animationName="fade-in">
+                Ready for your digital success?
+              </h1>
+              <img class="img-right-bottom breathing" src="./src/assets/image/bg/dot-shape.svg" alt="">
+            </div>
+            <div class="pos  onFocusAnimate" data-animationName="fade-in">
+              <button class="tertiary-button position-relative">
+                <span class="sp-bg breathing position-absolute">
+                  <svg width="52" height="76" viewBox="0 0 52 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M45.6983 49.4009C35.654 45.6864 25.7953 41.2566 15.7074 37.5259M50 40.018C48.2779 27.3545 46.3425 14.6115 44.6961 2M43.2715 64.1802C29.0467 66.6309 15.5727 68.4284 2 74" stroke="#FF8E8E" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <span class="text-black">start a project</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </button>
+            </div>
+            
+            <span class="star-2 lb-rt-move">
+              <svg width="102" height="102" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M51 0L71.9162 30.0838L102 51L71.9162 71.9162L51 102L30.0838 71.9162L0 51L30.0838 30.0838L51 0Z" fill="#00A146"/>
+                </svg>                
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section start here  -->
+  <footer class="py-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <h1 class="font-max mb-32">
+            DigiBoost
+          </h1>
+          <span class="d-block text-sm">Get In touch..</span>
+          <span class="d-block text-sm">info@digiboost.com</span>
+        </div>
+        <div class="col-12 col-lg-4">
+          <h2 class="footer-heading">Important Links</h2>
+          <ul>
+            <li>
+              <a href="#">Working Process</a>
+            </li>
+            <li>
+              <a href="#">Recent Works</a>
+            </li>
+            <li>
+              <a href="#">Our Blogs</a>
+            </li>
+            <li>
+              <a href="#">Our Community</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-4">
+          <h2 class="footer-heading">Locations</h2>
+          <p class="text-sm">5318 Coffeen Avenue Paddington, <br>
+            Surry Hills 205318, Sydney, Australia</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- nav dropdown  -->
+  <div id="dropdownArea" class="navigation bg-black dropdown-content">
+    <div class="container">
+      <div class="row">
+        <div class="nav-button">
+          <button class="cross-button" onclick="toggleMenu()">
+            <svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="44" cy="44" r="44" fill="#5C5C5C"/>
+              <path d="M58.08 29.9199L29.92 58.0799" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M29.92 29.9199L58.08 58.0799" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </button>
+        </div>
+        <div class="col-auto my-auto">
+          <ul class="pages">
+            <li>
+              <a class="capital font-max active" onmouseover="newImage('./src/assets/image/content-image/team-1.png')"
+                onmouseout="oldImg()" href="about-us.html"><span>about us</span></a>
+            </li>
+            <li>
+              <a class="capital font-max" onmouseover="newImage('./src/assets/image/content-image/team-2.png')"
+                onmouseout="oldImg()" href="works.html"><span>works</span></a>
+            </li>
+            <li>
+              <a class="capital font-max" onmouseover="newImage('./src/assets/image/content-image/team-3.png')"
+                onmouseout="imageReset()" href="team.html"><span>teams</span></a>
+            </li>
+            <li>
+              <a class="capital font-max" onmouseover="newImage('./src/assets/image/content-image/team-4.png')"
+                onmouseout="oldImg()" href="contact-us.html"><span>contact us</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 mx-auto hide-md">
+          <div class="image-container text-center">
+            <img id="changedImage" src="./src/assets/image/content-image/nav-image.png" alt="laughing peoples">
+          </div>
+        </div>
+        <div class="col-12">
+          <ul class="social">
+            <li class="social-links capital" onmouseover="newImage('./src/assets/image/content-image/team-4.png')"
+              onmouseout="oldImg()">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8.5" r="8" fill="#FFB3B3" />
+              </svg>
+              <h4>Dribble</h4>
+            </li>
+            <li class="social-links capital my-auto"
+              onmouseover="newImage('./src/assets/image/content-image/team-3.png')" onmouseout="oldImg()">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8.5" r="8" fill="#89FFBC" />
+              </svg>
+              <h4>behance</h4>
+            </li>
+            <li class="social-links capital" onmouseover="newImage('./src/assets/image/content-image/team-2.png')"
+              onmouseout="oldImg()">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8.5" r="8" fill="#FF8E8E" />
+              </svg>
+              <h4>Instagram</h4>
+            </li>
+            <li class="social-links capital" onmouseover="newImage('./src/assets/image/content-image/team-1.png')"
+              onmouseout="oldImg()">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8.5" r="8" fill="rgb(23, 0, 141)" />
+              </svg>
+              <h4>facebook</h4>
+            </li>
+            <li class="social-links capital" onmouseover="newImage('./src/assets/image/content-image/team-4.png')"
+              onmouseout="oldImg()">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8.5" r="8" fill="#89FFBC" />
+              </svg>
+              <h4>LinkedIn</h4>
+            </li>
+            <li class="social-links capital" onmouseover="newImage('./src/assets/image/content-image/team-2.png')"
+              onmouseout="oldImg()">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8.5" r="8" fill="#2BFD86" />
+              </svg>
+              <h4>Twitter</h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- essentials  -->
+
+    <!-- fontawesome kit  -->
+    <script src="https://kit.fontawesome.com/38554ff06d.js" crossorigin="anonymous"></script>
+    <!-- carousel -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- plugin javascript  -->
+    <script src="./src/assets/js/jquery.min.js"></script>
+    <!-- carousel  -->
+    <script src="./src/assets/js/owl.carousel.min.js"></script>
+    <!-- bundle js files  -->
+    <script src="./src/assets/js/bootstrap.bundle.min.js"></script>
+    <!-- custom javascript  -->
+    <script src="./src/assets/js/main.js"></script>
+</body>
+  </body>
+</html>

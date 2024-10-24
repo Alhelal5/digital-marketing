@@ -1,0 +1,45 @@
+/* image overlay */
+.container {
+    height: 600px;
+    width: 100vw;
+    background: black;
+    overflow: hidden;
+}
+img {
+   object-fit: cover;
+   opacity: 0.4;
+}
+
+/* details of overlay with image and text added  */
+.image-container{
+    position: relative;
+    max-width: 648px;
+    cursor: pointer;
+    background: #000000;
+    transition: 1s ease-in-out;
+}
+.image-container img.image{
+    display: flex;
+    max-height: 720px;
+    height: 100%;
+    width: 100%;
+    transition: all 500ms ease-in-out;
+}
+.image-container .img-hover{
+    position: absolute;
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    transition: 500ms ease-in-out;
+}
+.image-container:hover .image{
+    opacity: 0.3;
+}
+.image-container:hover .img-hover{
+    transform: translate(-50% , -50%);
+    opacity: 1;
+}
+
+

@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digital Marketing</title>
+    <!-- icon  -->
+    <link rel="icon" href="./icon.png">
+    <!-- bootstrap cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" href="./src/assets/css/bootstrap.min.css">
+    <!-- Fontshare clash display  -->
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600&f[]=manrope@700,400,600,500&display=swap" rel="stylesheet">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./src/assets/css/pages.css">
+    <link rel="stylesheet" href="./src/assets/css/animation.css">
+  </head>
+  <body>
+  
+  <div id="nav-color">
+    <div id="navbar" class="nav fade-in">
+      <div class="container">
+        <div class="row">
+          <div class="col-auto me-auto logo">
+            <a id="buttonClick" href="./index.html"><img src="./src/assets/image/DigiBoost.png" alt=""></a>
+          </div>
+          <div class="col-auto ms-auto d-flex">
+            <div class="work-together">
+              <button class="primary-button ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-send">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span id="dropId" class="primary">Let’s Work Together</span>
+              </button>
+            </div>
+            <div class="menu-button my-auto dropdown">
+              <button id="buttonClick2" onclick="toggleMenu()" class="dropbtn da-menu">
+                <svg width="54" height="52" viewBox="0 0 54 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M36 18H18" stroke="#2BFD86" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M36 26H24" stroke="#2BFD86" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M36 34H18" stroke="#2BFD86" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- contact us section start  -->
+  <section class="da-contact-us py-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 position-relative">
+          <div class="from-hidden">
+            <h6 class="sub-heading onFocusAnimate" data-animationName="slidetobottom">
+              CONTACT US
+            </h6>
+          </div>
+          <h1 class="mb-32 onFocusAnimate" data-animationName="slideInLeftFadeIn">
+              Reach Out to Us for Effective <span class="position-relative"> and <img class="mobile-none contact-us-hero-dot-bg breathing delay-1s" src="./src/assets/image/bg/contact-us-hero-dot-dot.svg" alt=""></span> <br> Innovative Digital Marketing Consultation
+          </h1>
+          <img class="contact-us-hero-star rotate slow" src="./src/assets/image/bg/contact-us-hero-star.svg" alt="star">
+          <p class="text-lg onFocusAnimate" data-animationName="fade-in">We take pride in our ability to drive real results for our clients, and our case studies are a testament to the impact our work has on businesses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact form section start  -->
+  <section class="da-contact-form py-100">
+      <div class="container">
+          <div class="row">
+              <div class="col-12 col-md-5">
+                  <div class="image-container position-relative">
+                    <img class="contact-us-3rd-image windmill slow" src="./src/assets/image/bg/contact-us-3rd-image.svg" alt="">
+                    <img class="image mx-auto" src="./src/assets/image/content-image/contact-us.png" alt="">
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 ms-auto">
+                <div class="row">
+                  <div class="col-12 con-top text-center text-md-start">
+                    <h2 class="capital">send messages...</h2>
+                  </div>
+                  <form onsubmit="return validate();" action="./contact.php" method="POST">
+                    <div class="col-12">
+                        <input id="uname" class="form-control" type="text" name="name" placeholder="Your Name *">
+                    </div>
+                    <div class="col-12">
+                        <input id="email" class="form-control" type="email" name="email" placeholder="Your E-Mail *">
+                    </div>
+                    <div class="col-12">
+                        <textarea id="comments" class="form-control user-message m t-4" name="message" placeholder="Your messages..."></textarea>
+                    </div>
+                    
+                    <div class="mb-5 col-12 col-md-8 col-lg-6">
+                      <button type="submit" class="secondary-button">
+                        <span class="no-wrap">send message</span>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- start a project section start  -->
+  <section class="start-project py-100 secondary-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-7 mx-auto text-center">
+          <div class="ready-left-right position-relative">
+            <div class="star-1 lt-rb-move">
+              <svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M30.5 0L43.0087 17.9913L61 30.5L43.0087 43.0087L30.5 61L17.9913 43.0087L0 30.5L17.9913 17.9913L30.5 0Z"
+                  fill="#FE5F5F" />
+              </svg>
+            </div>
+            <div class="position-relative">
+              <img class="img-left-top rotate" src="./src/assets/image/bg/yellow-star.svg" alt="">
+              <h1 class="font-max mb-64 scroll-element animate slideInTopFast">
+                Ready for your digital success?
+              </h1>
+              <img class="img-right-bottom breathing" src="./src/assets/image/bg/dot-shape.svg" alt="">
+            </div>
+            <div class="pos">
+              <button class="tertiary-button position-relative">
+                <span class="sp-bg breathing position-absolute">
+                  <svg width="52" height="76" viewBox="0 0 52 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M45.6983 49.4009C35.654 45.6864 25.7953 41.2566 15.7074 37.5259M50 40.018C48.2779 27.3545 46.3425 14.6115 44.6961 2M43.2715 64.1802C29.0467 66.6309 15.5727 68.4284 2 74"
+                      stroke="#FF8E8E" stroke-width="3" stroke-linecap="round" />
+                  </svg>
+                </span>
+                <span class="text-black">start a project</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-arrow-up-right">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </button>
+            </div>
+
+            <span class="star-2 lb-rt-move">
+              <svg width="102" height="102" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M51 0L71.9162 30.0838L102 51L71.9162 71.9162L51 102L30.0838 71.9162L0 51L30.0838 30.0838L51 0Z"
+                  fill="#00A146" />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section start here  -->
+  <footer class="py-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <h1 class="font-max mb-32">
+            DigiBoost
+          </h1>
+          <span class="d-block text-sm">Get In touch..</span>
+          <span class="d-block text-sm">info@digiboost.com</span>
+        </div>
+        <div class="col-12 col-lg-4">
+          <h2 class="footer-heading">Important Links</h2>
+          <ul>
+            <li>
+              <a href="#">Working Process</a>
+            </li>
+            <li>
+              <a href="#">Recent Works</a>
+            </li>
+            <li>
+              <a href="#">Our Blogs</a>
+            </li>
+            <li>
+              <a href="#">Our Community</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-4">
+          <h2 class="footer-heading">Locations</h2>
+          <p class="text-sm">5318 Coffeen Avenue Paddington, <br>
+            Surry Hills 205318, Sydney, Australia</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- nav dropdown  -->
+  <div id="dropdownArea" class="navigation bg-black dropdown-content">
+    <div class="container">
+      <div class="row">
+        <div class="nav-button">
+          <button class="cross-button" onclick="toggleMenu()">
+            <svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="44" cy="44" r="44" fill="#5C5C5C"/>
+              <path d="M58.08 29.9199L29.92 58.0799" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M29.92 29.9199L58.08 58.0799" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </button>
+        </div>
+        <div class="col-auto my-auto">
+          <ul class="pages">
+            <li>
+              <a class="capital font-max" onmouseover="newImage('./src/assets/image/content-image/team-1.png')"
+                onmouseout="oldImg()" href="about-us.html"><span>about us</span></a>
+            </li>
+            <li>
+              <a class="capital font-max" onmouseover="newImage('./src/assets/image/content-image/team-2.png')"
+                onmouseout="oldImg()" href="works.html"><span>works</span></a>
+            </li>
+            <li>
+              <a class="capital font-max" onmouseover="newImage('./src/assets/image/content-image/team-3.png')"
+                onmouseout="imageReset()" href="team.html"><span>teams</span></a>
+            </li>
+            <li>
+              <a class="capital font-max active" onmouseover="newImage('./src/assets/image/content-image/team-4.png')"
+                onmouseout="oldImg()" href="contact-us.html"><span>contact us</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 mx-auto hide-md">
+          <div class="image-container text-center">
+            <img id="changedImage" src="./src/assets/image/content-image/nav-image.png" alt="laughing peoples">
+          </div>
+        </div>
+        <div class="col-12">
+          <ul class="social">
+            <li class="social-links capital" onmouseover="newImage('./src/assets/image/content-image/team-4.png')"
+              onmouseout="oldImg()">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8.5" r="8" fill="#FFB3B3" />
+              </svg>
+              <h4>Dribble</h4>
+            </li>
+            <li class="social-links capital my-auto"
+              onmouseover="newImage('./src/assets/image/content-image/team-3.png')" onmouseout="oldImg()">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8.5" r="8" fill="#89FFBC" />
+              </svg>
+              <h4>behance</h4>
+            </li>
+            <li class="social-links capital" onmouseover="newImage('./src/assets/image/content-image/team-2.png')"
+              onmouseout="oldImg()">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8.5" r="8" fill="#FF8E8E" />
+              </svg>
+              <h4>Instagram</h4>
+            </li>
+            <li class="social-links capital" onmouseover="newImage('./src/assets/image/content-image/team-1.png')"
+              onmouseout="oldImg()">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8.5" r="8" fill="rgb(23, 0, 141)" />
+              </svg>
+              <h4>facebook</h4>
+            </li>
+            <li class="social-links capital" onmouseover="newImage('./src/assets/image/content-image/team-4.png')"
+              onmouseout="oldImg()">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8.5" r="8" fill="#89FFBC" />
+              </svg>
+              <h4>LinkedIn</h4>
+            </li>
+            <li class="social-links capital" onmouseover="newImage('./src/assets/image/content-image/team-2.png')"
+              onmouseout="oldImg()">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8.5" r="8" fill="#2BFD86" />
+              </svg>
+              <h4>Twitter</h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- essentials  -->
+
+  <!-- fontawesome kit  -->
+  <script src="https://kit.fontawesome.com/38554ff06d.js"></script>
+  <!-- carousel -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <!-- plugin javascript  -->
+  <script src="./src/assets/js/jquery.min.js"></script>
+  <!-- bundle js files  -->
+  <script src="./src/assets/js/bootstrap.bundle.min.js"></script>
+  <!-- custom javascript  -->
+  <script src="./src/assets/js/main.js"></script>
+</body>
+
+</html>

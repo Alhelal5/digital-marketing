@@ -1,0 +1,192 @@
+.nav-tabs .nav-link{
+    cursor: pointer;
+    transition: 3s all;
+}
+.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-link.active {
+    color: red;
+    border-color: transparent;
+}
+ /* for desktop view css  */
+
+ ul, li, a{
+    text-decoration: none;
+    margin: 0;
+}
+li{
+    list-style-type: none;
+}
+.navbar-nav li{
+    color: var(--deep-blue);
+}
+.navbar-nav .nav-link {
+    font-size: var(--text-md);
+    color: inherit;
+    font-weight: 500;
+    padding: 0;
+}
+.sign-in .connect{
+  font-size: 20px;
+  color: #ffffff;
+}
+.navbar-nav a:hover{
+    color: var(--primary);
+}
+.navbar-nav .sign-in a{
+    transition: 500ms all;
+}
+.navbar-nav .sign-in:hover a{
+    color: var(--white);
+    background: var(--primary);
+}
+.navbar-nav .primary-btn a:hover{
+    color: var(--white);
+}
+.top-nav{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.top-nav ul li {
+    padding: 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s;
+}
+.top-nav ul li.active {
+    color: var(--primary);
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+  top: 100%;
+  left: 0;
+}
+.dropdown-menu li{
+  transition: all 300ms;
+}
+.dropdown-menu li:hover{
+  background-color: rgb(227, 227, 227);
+}
+
+/* nav dropdown css  */
+.dropdown-item.active, .dropdown-item:active {
+  color: var(--primary);
+  text-decoration: none;
+  background-color: var(--bs-dropdown-link-active-bg);
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color: var(--primary);
+  background-color: transparent;
+}
+ /* for desktop view css  */
+
+  .site-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .site-navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* display: flex; */
+  }
+  /* navbar regular css end */
+  
+  /* nav-toggler css start */
+  .nav-toggler {
+    border: 1px solid #ffffff;
+    padding: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    height: none;
+    display: none;
+  }
+  .nav-toggler span, 
+  .nav-toggler span:before, 
+  .nav-toggler span:after {
+    content: url(../image/Navicon.svg);
+    display: block;
+    transition: .3s;
+  }
+  /* .nav-toggler span:before {
+    content: '';
+    transform: translateY(-7px);
+  }
+  .nav-toggler span:after {
+    content: '';
+    transform: translateY(4px);
+  }
+  .nav-toggler.toggler-open span {
+    background-color: transparent;
+  }
+  .nav-toggler.toggler-open span:before {
+    transform: translateY(0px) rotate(45deg);
+  }
+  .nav-toggler.toggler-open span:after {
+    transform: translateY(-3px) rotate(-45deg);
+  }
+  .nav-toggler:hover{
+    background: rgb(194, 194, 194);
+  } */
+
+  /* nav-toggler css end */
+  
+  /* mobile breakpoint start */
+  @media screen and (max-width: 991px) {
+    /* navbar css for mobile start */
+    .nav-toggler{
+      display: block;
+    }
+    .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: 0 0 0;
+    }
+    /* .site-navbar ul {
+      position: absolute;
+      width: 100%;
+      height: 450px;
+      left: 0;
+      top: 76px;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(0,0,0,.75);
+      max-height: 0;
+      overflow: hidden;
+      transition: .3s;
+    } */
+    .site-navbar ul {
+      position: absolute;
+      width: 100%;
+      height: 450px;
+      left: 0;
+      top: 76px;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(255 255 255);
+      max-height: 0;
+      overflow: hidden;
+      color: black !important;
+      transition: .3s;
+      box-shadow: 0px 7px 8px -1px #b5a9a9d4;
+      border-radius: 0 0 8px 8px;
+  }
+    .site-navbar ul li {
+      width: 100%;
+      margin-top: 10px;
+      text-align: center;
+      color: rgb(0, 0, 0);
+    }
+    .site-navbar ul li:hover {
+      background-color: rgba(255,255,255,.1);
+    }
+    .site-navbar ul.open {
+      max-height: 302px;
+      overflow: visible;
+    }
+    /* navbar css for mobile end */
+  }
+  /* mobile breakpoint end */
